@@ -56,3 +56,7 @@ defaults:
       categories: ["Development", "Study"]
       tags: ["C Language", "Web", "SaaS", "AI"]
 
+# Google Analytics example
+ga_analytics: UA-000000-0
+      
+
