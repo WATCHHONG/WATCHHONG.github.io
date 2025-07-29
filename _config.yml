@@ -1,6 +1,6 @@
 # Setup
 title: WATCHHONG
-tagline: The Jekyll Butler
+tagline: Dev Blog
 url: https://WATCHHONG.github.io
 paginate: 1
 baseurl: ""
@@ -11,6 +11,8 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
 
 # Optimize Jekyll
 exclude:
@@ -34,8 +36,23 @@ sass:
 # Specify the author for blog posts
 author:
   name: PARK JIHONG
-# url: https://twitter.com/mdo
+  url: https://github.com/WATCHHONG
   email: gihong0101@gmail.com
 
 # Custom vars
 version: 3.0.0
+
+ga_analytics: G-XXXXXXXXXX
+collections:
+  posts:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: "PARK JIHONG"
+      categories: ["Development", "Study"]
+      tags: ["C Language", "Web", "SaaS", "AI"]
+
